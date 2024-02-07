@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  justify-content: center;
+  color: #2f4f4f; }
+
+.cards {
+  padding: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 40px; }
+  @media (min-width: 1000px) {
+    .cards {
+      grid-template-columns: repeat(4, 1fr); } }
+
+.card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: transform 1s ease; }
+  .card__rank {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    top: 84px;
+    right: 10px;
+    font-size: 16px;
+    line-height: 18.4px;
+    color: #8b0000;
+    background-color: #fff;
+    border-radius: 50%; }
+  .card:hover {
+    background-color: #eeeeee;
+    border-radius: 10px;
+    transform: scale(1.2);
+    z-index: 1; }
+    .card:hover__rank {
+      top: 113px;
+      right: 24px; }
+    .card:hover .container__img {
+      margin: 10px 10px 0 10px;
+      border-radius: 60px; }
+  .card .extra {
+    display: none;
+    justify-content: center;
+    gap: 5px;
+    color: black;
+    margin-bottom: 19px; }
+    .card .extra .extra__pay,
+    .card .extra .extra__sport {
+      font-size: 21px;
+      line-height: 24.84px; }
+  .card:hover .extra {
+    display: flex; }
+
+.container__img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: border-radius 1s; }
+
+.details {
+  font-size: 20px;
+  line-height: 23px;
+  color: #2f4f4f; }
+
+
+/*# sourceMappingURL=/main.39afc03c.css.map */
