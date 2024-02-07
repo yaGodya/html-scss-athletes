@@ -1,0 +1,23 @@
+@mixin win-width-500 {
+    @media (min-width: 500px) {
+        @content;
+    }
+}
+
+@mixin win-width-750 {
+    @media (min-width: 750px) {
+        @content;
+    }
+}
+
+@mixin win-width-1000 {
+    @media (min-width: 1000px) {
+        @content;
+    }
+}
+
+@mixin win-width-1500 {
+    @media (min-width: 1500px) {
+        @content;
+    }
+}
